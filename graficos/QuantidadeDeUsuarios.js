@@ -5,12 +5,12 @@ async function QuantidadeDeUsuarios(){
     const res = await fetch(url)
     const dados = await res.json();
     const nomeDasRedes = Object.keys(dados);
-    const  quantidadeDeUsuarios = Object.values(dados);
+    const  QuantidadeDeUsuarios = Object.values(dados);
 
     const infos = [
 {
     x: nomeDasRedes,
-    y: quantidadeDeUsuarios,
+    y: QuantidadeDeUsuarios,
     type: 'bar',
 marker:{
 color:getCSS('--cor-secundaria')
@@ -41,4 +41,4 @@ document.getElementById('graficos-container').appendChild(grafico);
 Plotly.newPlot(grafico,infos,layout);
 }
 
-quantidadeDeUsuarios();
+QuantidadeDeUsuarios();
