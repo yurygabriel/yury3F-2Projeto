@@ -57,6 +57,10 @@ transition: transform 2s;
    color: var(--cor-de-aba);
    font-weight: bold;
 }
+.grafico{
+    margin-top: 3rem;
+}
+
 .graficos-container{
     margin: 5rem;
 }
